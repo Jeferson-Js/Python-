@@ -17,7 +17,7 @@ while True:
     elif events == 'Soma':
         value1 = int(values['FirstValue'])
         value2 = int(values['SecondValue'])
-        adding = (value1 + value2)
-        window['mesage'].update('The sum between {} and {} is {}! '.format(value1, value2, adding))
+        adding = value1 + value2
+        window['mesage'].update('The sum between {} and {} is {} ! '.format(value1, value2, adding))
 
 window.close()
