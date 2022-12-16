@@ -1,0 +1,22 @@
+{% extends "template.html" %}
+{% block content %}
+<h1 class="text-center">{{ titulo }}</h1>
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th>Agencia</th>
+            <th>Titular</th>
+            <th>Saldo</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for conta in constas %}
+        <tr>
+            <td>{{ conta.agencia}}</td>
+            <td>{{ conta.titular}}</td>
+            <td>{{ conta.saldo}}</td>
+        </tr>
+        {% endfor%}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "template.html" %}
+{% block content %}
+    <h1 class="text-center">{{ titulo }}</h1>
+    <div class="container">
+        <form class="form" action="/criar" method="post">
+            <input
+                type="number"
+                name="agencia"
+                placeholder="Qual a sua agência:" />
+            <input type="text" name="titular" placeholder="Nome do titular:" />
+            <input type="number" name="saldo" placeholder="Saldo em conta:" />
+            <button class="btn btn-primary" type="submit">
+                Adicionar usuário
+            </button>
+        </form>
+    </div>
+{% endblock %}
