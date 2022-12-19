@@ -1,6 +1,7 @@
 import PySimpleGUI as sg
 
 sg.theme('python')
+sg.set_global_icon('python')
 
 layout = [
     [sg.Text('First Value'), sg.Input(key='FirstValue', size=(20,1))],
